@@ -20,10 +20,7 @@ namespace BookingSystem.Services.Factory.Conceretes
             _repository = repository;
         }
 
-        public BookingStatus GetBookingStatusBasedOnSearch(SearchModel searchModel)
-        {
-            return BookingStatus.Success;
-        }
+        public BookingStatus GetBookingStatusBasedOnSearch(SearchModel searchModel) => BookingStatus.Success;
 
         public async Task<List<DestinationOptionDTO>> SearchAsync(SearchModel model)
         {

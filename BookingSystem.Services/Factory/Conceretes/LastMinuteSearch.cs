@@ -19,10 +19,8 @@ namespace BookingSystem.Services.Factory.Conceretes
         }
 
 
-        public BookingStatus GetBookingStatusBasedOnSearch(SearchModel searchModel)
-        {
-            return BookingStatus.Failed;
-        }
+        public BookingStatus GetBookingStatusBasedOnSearch(SearchModel searchModel) => BookingStatus.Failed;
+
 
         public async Task<List<DestinationOptionDTO>> SearchAsync(SearchModel model)
         {
