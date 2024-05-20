@@ -47,7 +47,6 @@ namespace BookingSystem.Services.Factory.Conceretes
 
                     _repository.AddOrUpdate(destinationOptions);
 
-                    //Could have used automapper. But did not include in project. 
                     result.Add(new()
                     {
                         OptionCode = destinationOptions.Code,
